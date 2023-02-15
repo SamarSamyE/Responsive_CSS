@@ -7,19 +7,18 @@
     <title>Form</title>
     <style>
 div {
-    margin-left:27%;
-    width: 400px;
+    margin-left:30%;
+    width: 40%;
     height:350px;
     margin-top: 5%;
     border: 1px solid black;
 }
 input{
-    margin-left:20px;
+    margin-left:5%;
     display: block;
-    width: 30%;
+    width: 90%;
     border: none;
     border-bottom: 1px solid gray;
-    width:300px;
     height:40px;
 }
  h1{
@@ -36,8 +35,8 @@ input:invalid{
 }
 
 #btn{
-    width: 100px;
-    height: 30px;
+    width: 25%;
+    height: 40px;
     margin-top: 2%;
     margin-left: 37%;
     border-radius: 10px;
@@ -53,7 +52,7 @@ span{
 </head>
 <body>
  <div>
-   <h1>Change Email Address</h1>
+   <h1>Email Address</h1>
    <form action="save.html" target="_blank">
    <p> <input id="username" type="text"  required placeholder="UserName " name="user" pattern="[A-Za-z]{5}"
     oninvalid="document.getElementById('s1').innerHTML='The required user name may only contains alphabetical characters'";/></p>
@@ -63,6 +62,7 @@ span{
     <span id="s2"></span>
    <p><input id="btn" type="submit" value="Change"/></p>
    </form> 
+</div>
    <script>
     var btn=document.getElementById("btn");
     btn.addEventListener('click',function(){
@@ -74,6 +74,6 @@ span{
         document.write(`Email: ${localStorage.getItem("email")}`);
     })
    </script>
- </div>
+ 
 </body>
 </html>
